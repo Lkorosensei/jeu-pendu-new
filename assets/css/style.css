@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+body {
+    background-color: black;
+}
+
+
+header {
+    display: flex;
+}
+
+.div-logo {
+    
+}
+
+.titre-github {
+    color: white;
+}
+
+.image-git {
+    /* width: 50%; */
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.list-nav {
+    color: white;
+    list-style-type: none;
+}
