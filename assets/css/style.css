@@ -63,18 +63,20 @@ main {
 /* --------------------------------------BOX1----------------------------- */
 .box1-div-gauche {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .titre-h1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 1.5rem;
     font-weight: 100%;
     /* text-align: center; */
 }
 
 .image-h1 {
-    width: 20%;
+    width: 15%;
     padding-bottom: 5%;
 }
 
@@ -136,4 +138,43 @@ main {
 footer p {
     text-align: center;
     font-weight: bold;;
+}
+
+
+
+
+.div-lien-jeu {
+    display: flex;
+    /* border: solid blue ; */
+    padding-top: 5%;
+}
+
+.box-lien-jeu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* height: 100%; */
+    border: solid #850009;
+}
+
+
+.image-lien-jeu {
+    width: 8%;
+    margin: 2%;
+}
+
+.image-enfant {
+    width: 15%;
+    margin-left: 3%;
+}
+
+.image-arbre {
+    width: 100%;
+    padding: 0px;
+}
+
+
+.class-h1 {
+    font-size: 3rem;
 }

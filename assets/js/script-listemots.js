@@ -1,6 +1,20 @@
 console.log("Youhoooo !");
 
-const tablListNav = ['Accueil','Jouer','Liste Mots'];
+const tablListNav = [
+    {
+        caption: "Accueil",
+        url:"./index.html"
+    },
+    {
+        caption:"Jouer",
+        url:"./jeu.html"
+    },
+    {
+        caption:"Liste Mot",
+        url:"./liste-mot.html"
+    }
+]
+
 
 
 // -------------------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------------------------------
@@ -43,40 +57,11 @@ console.log(ulNav);
 nav.appendChild(ulNav);
 
 // ---------------------------------------Liste-Nav--------------------
-// est ce qu'on fait une table pour les 3 listes ou est ce qu'on fait manuellement ?
-// tablListNav.forEach(liste => {
-//     let listNav = document.createElement("li");
-//     let listA = document.createElement("a")
-//     listNav.classList.add("list-nav");
-//     listA.innerText = [liste]
-//     console.log(listNav);
-//     ulNav.appendChild(listNav);
-//     listNav.appendChild(listA);
-// });
-
- let li1 = document.createElement("li");
- ulNav.appendChild(li1)
-
- let li2 = document.createElement("li");
- ulNav.appendChild(li2);
-
- let li3 = document.createElement("li");
- ulNav.appendChild(li3)
-
- let aLi1 = document.createElement("a"); 
- aLi1.innerText = "Accueil";
- aLi1.href = "index.html";
- li1.appendChild(aLi1);
-
- let aLi2 = document.createElement("a"); 
- aLi2.innerText = "Jouer";
- aLi2.href = "jouer.html";
- li2.appendChild(aLi2);
-
- let aLi3 = document.createElement("a"); 
- aLi3.innerText = "Liste Mot";
- aLi3.href = "#";
- li3.appendChild(aLi3);
+tablListNav.forEach(routes => {
+    let liNav = document.createElement('li');
+    liNav.innerHTML = `<a href='${routes.url}'>${routes.caption}</a>`
+    ulNav.appendChild(liNav);                
+});
 
 // --------------------------------------------------Image-Mort-NAV----------------------
 let imageMortNav = document.createElement("img");

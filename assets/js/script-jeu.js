@@ -1,6 +1,19 @@
 console.log("Youhoooo !");
 
-const tablListNav = ['Accueil','Jouer','Liste Mots'];
+const routes = [
+    {
+        caption: "Accueil",
+        url: "./index.html"
+    },
+    {
+        caption: "Jouer",
+        url: "./jeu.html"
+    },
+    {
+        caption: "Liste Mots",
+        url: "./liste-mots.html"
+    }
+]
 
 
 // -------------------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------------------------------
@@ -43,40 +56,11 @@ console.log(ulNav);
 nav.appendChild(ulNav);
 
 // ---------------------------------------Liste-Nav--------------------
-// est ce qu'on fait une table pour les 3 listes ou est ce qu'on fait manuellement ?
-// tablListNav.forEach(liste => {
-//     let listNav = document.createElement("li");
-//     let listA = document.createElement("a")
-//     listNav.classList.add("list-nav");
-//     listA.innerText = [liste]
-//     console.log(listNav);
-//     ulNav.appendChild(listNav);
-//     listNav.appendChild(listA);
-// });
-
- let li1 = document.createElement("li");
- ulNav.appendChild(li1)
-
- let li2 = document.createElement("li");
- ulNav.appendChild(li2);
-
- let li3 = document.createElement("li");
- ulNav.appendChild(li3)
-
- let aLi1 = document.createElement("a"); 
- aLi1.innerText = "Accueil";
- aLi1.href = "index.html";
- li1.appendChild(aLi1);
-
- let aLi2 = document.createElement("a"); 
- aLi2.innerText = "Jouer";
- aLi2.href = "jouer.html";
- li2.appendChild(aLi2);
-
- let aLi3 = document.createElement("a"); 
- aLi3.innerText = "Liste Mot";
- aLi3.href = "#";
- li3.appendChild(aLi3);
+routes.forEach(route => {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href='${route.url}'>${route.caption}</a>`;
+    ulNav.appendChild(li)
+})
 
 // --------------------------------------------------Image-Mort-NAV----------------------
 let imageMortNav = document.createElement("img");
@@ -110,7 +94,7 @@ divGauche.appendChild(box1DivGauche)
 // -------------------------------------------------------- TITRE H1 ------------------------------
 let titreH1 = document.createElement("h1");
 titreH1.classList.add("titre-h1");
-titreH1.innerText = "Mr.ALAIN est condamné ! Trouvera tu le bon mot au juge pour le sauvé ?"
+titreH1.innerText = "Mr.ALAIN est condamné ! Trouveras-tu le bon mot au juge pour le sauver ?"
 console.log(titreH1);
 box1DivGauche.appendChild(titreH1)
 
