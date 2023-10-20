@@ -86,54 +86,84 @@ imageMortNav.src = '../../image/mortrouge.png';
 ulNav.appendChild(imageMortNav);
 
 
+
 // ------------------------------------------------------------------------------------- MAIN -----------------------------------------------------------------------------------------------------------
 let main = document.createElement("main");
+main.classList.add("class-main");
+console.log(main);
 document.body.appendChild(main);
+
 
 // -------------------------------------------------------------------------------------- DIV GAUCHE ------------------------------------------------
 let divGauche = document.createElement("div");
-divGauche.classList.add("div-gauche")
-main.appendChild(divGauche)
+divGauche.classList.add("div-gauche");
+console.log(divGauche);
+main.appendChild(divGauche);
 
-// -----------------------------------------------------------------------TITRE H1 -----------------
-let h1 = document.createElement("h1");
-h1.classList.add("class-h1");
-h1.innerText = "Bienvenu sur le jeu du pendu !";
-divGauche.appendChild(h1);
 
-// ----------------------------------------------------------------------- PARAGRAPHE -------------
-let regle = document.createElement("p");
-regle.classList.add("class-regle");
-regle.innerText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, inventore temporibus. Molestias totam provident ratione ipsa est quae nemo, suscipit, deserunt quas impedit nesciunt consequatur voluptatum doloribus dignissimos saepe velit!";
-divGauche.appendChild(regle);
+// -------------------------------------------------------------------------------- BOX1 DIV GAUCHE ------------------------
+let box1DivGauche = document.createElement("div");
+box1DivGauche.classList.add("box1-div-gauche");
+console.log(divGauche);
+divGauche.appendChild(box1DivGauche)
 
-// ----------------------------------------------------------------------- DIV LIEN JEU -----------
-let divLienJeu = document.createElement("div");
-divLienJeu.classList.add("div-lien-jeu");
-divGauche.appendChild(divLienJeu);
+// -------------------------------------------------------- IMAGE H1 ------------------------------
+let imageH1 = document.createElement("img");
+imageH1.classList.add("image-h1");
+imageH1.src = "../../image/alphabet.png";
+box1DivGauche.appendChild(imageH1);
 
-// --------------------------------------------- BOX LIEN JEU ------------
-let boxLienJeu = document.createElement("div");
-boxLienJeu.classList.add("box-lien-jeu");
-divLienJeu.appendChild(boxLienJeu);
+// -------------------------------------------------------- TITRE H1 ------------------------------
+let titreH1 = document.createElement("h1");
+titreH1.classList.add("titre-h1");
+titreH1.innerText = "Ajouter un mot : "
+console.log(titreH1);
+box1DivGauche.appendChild(titreH1)
 
-// --------------------- BOUTON LIEN JEU --------
-let boutonLienJeu = document.createElement("button");
-boutonLienJeu.classList.add("bouton-lien-jeu");
-boutonLienJeu.innerText = "JOUER AU PENDU "
-boxLienJeu.appendChild(boutonLienJeu);
+// -------------------------------------------------------------------------------- BOX2 DIV GAUCHE ------------------------
+let box2DivGauche = document.createElement("div");
+box2DivGauche.classList.add("box2-div-gauche");
+console.log(box2DivGauche);
+divGauche.appendChild(box2DivGauche);
 
-// ---------------------- IMAGE LIEN JEU --------
-let imageLienJeu = document.createElement("img");
-imageLienJeu.classList.add("image-lien-jeu");
-imageLienJeu.src = "../../image/bouton_fleche.png";
-boxLienJeu.appendChild(imageLienJeu);
+// -------------------------------------------------------- DIV RECHERCHE MOT -------------------------
+let divRechercheMot = document.createElement("div");
+divRechercheMot.classList.add("div-recherche-mot");
+console.log(divRechercheMot);
+box2DivGauche.appendChild(divRechercheMot);
 
-// --------------------------------------- IMAGE DIV LIEN JEU ------------
-imageDivLienJeu = document.createElement("img");
-imageDivLienJeu.classList.add("image-div-lien-jeu");
-imageDivLienJeu.src = "../../image/enfant.png";
+// Mettre en sorte de pouvoir rentrer des mots
 
+// ---------------------------------------------- IMAGE LOUPE ------------
+let imageLoupeAjoutMot = document.createElement("img");
+imageLoupeAjoutMot.classList.add("image-loupe-ajout-mot");
+imageLoupeAjoutMot.src = "../../image/loupe.png"
+console.log(imageLoupeAjoutMot);
+box2DivGauche.appendChild(imageLoupeAjoutMot);
+
+// -------------------------------------------------------------------------------- BOX3 DIV GAUCHE ------------------------
+let box3DivGauche = document.createElement("div");
+box3DivGauche.classList.add("box3-div-gauche");
+console.log(box3DivGauche);
+divGauche.appendChild(box3DivGauche);
+
+// -------------------------------------------------------- DIV AJOUT MOT -------------------------
+let divAjoutMot = document.createElement("div");
+divAjoutMot.classList.add("div-ajout-mot");
+console.log(divAjoutMot);
+box3DivGauche.appendChild(divAjoutMot);
+
+// ---------------------------------------------- TITRE AJOUT MOT --------
+let h2AjoutMot = document.createElement("h2");
+h2AjoutMot.classList.add("h2-ajout-mot");
+h2AjoutMot.innerText = "AJOUTER"
+divAjoutMot.appendChild(h2AjoutMot);
+
+// ---------------------------------------------- IMAGE AJOUT MOT --------
+let imageH2AjoutMot = document.createElement("img");
+imageH2AjoutMot.classList.add("image-h2-ajout-mot");
+imageH2AjoutMot.src = "../../image/plus.png";
+divAjoutMot.appendChild(imageH2AjoutMot);
 
 // -------------------------------------------------------------------------------------- DIV DROITE ------------------------------------------------
 let divDroite = document.createElement("div");
@@ -145,7 +175,6 @@ let imageArbre = document.createElement("img");
 imageArbre.classList.add("image-arbre");
 imageArbre.src = "../../image/banzai.png";
 divDroite.appendChild(imageArbre);
-
 
 
 // ------------------------------------------------------------------------------------- FOOTER -----------------------------------------------------------------------------------------------------------
