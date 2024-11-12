@@ -2,38 +2,179 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    color: white;
+    font-size: 30px;
+    /* border: 1px solid red; */
 }
 
 body {
     background-color: black;
 }
 
-
+/* -------------------------------------------HEADER----------------------------------------------------------*/
 header {
+    display: flex;    
+    padding: 2%;
+}
+
+.image-header {
+    width: 15%;
+    margin: 2%;
+}
+
+.div-logo-git {
+    width: 40%;
     display: flex;
-}
+    align-items: center;
 
-.div-logo {
-    
-}
-
-.titre-github {
-    color: white;
-}
-
-.image-git {
-    /* width: 50%; */
 }
 
 nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
+    justify-content: flex-end;
+    width: 60%;
 }
 
-.list-nav {
-    color: white;
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style-type: none;
+}
+
+
+.div-logo-git a, nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------------------------------- MAIN ----------------------------------------------------------*/
+main {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+/* --------------------------------------------------------DIV GAUCHE---------------------------------------- */
+.div-gauche {
+    width: 50%;
+    padding: 3%;
+}
+
+/* --------------------------------------BOX1----------------------------- */
+.box1-div-gauche {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.titre-h1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: 100%;
+    /* text-align: center; */
+}
+
+.image-h1 {
+    width: 15%;
+    padding-bottom: 5%;
+}
+
+/* --------------------------------------BOX3----------------------------- */
+.box3-div-gauche {
+    display: flex;
+    align-items: center;
+    /* height: 30%;     */
+}
+
+.image-box3 {
+    width: 20%;
+}
+
+.div-essai-box3 {
+    display: flex;
+    border: 2px solid #800009;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+.h2-box3 {
+    display: flex;
+    align-items: center;
+    color: #D82032;
+}
+
+.image-essai-box3 {
+    display: flex;
+    width: 15%;
+    height: 70%;
+    padding-left: 2%;
+}
+
+.div-droite {
+    width: 50%;
+    padding: 3%;
+}
+
+/* --------------------------------------------------- DIV DROITE -----------------------------  */
+.div-resultat-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+}
+
+.image-resultat-client {
+    width: 10%;
+    margin: 1%;
+}
+
+
+
+/* ------------------------------------------- FOOTER ----------------------------------------------------------*/
+footer p {
+    text-align: center;
+    font-weight: bold;;
+}
+
+
+
+
+.div-lien-jeu {
+    display: flex;
+    /* border: solid blue ; */
+    padding-top: 5%;
+}
+
+.box-lien-jeu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* height: 100%; */
+    border: solid #850009;
+}
+
+
+.image-lien-jeu {
+    width: 8%;
+    margin: 2%;
+}
+
+.image-enfant {
+    width: 15%;
+    margin-left: 3%;
+}
+
+.image-arbre {
+    width: 100%;
+    padding: 0px;
+}
+
+
+.class-h1 {
+    font-size: 3rem;
 }
